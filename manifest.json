@@ -1,0 +1,15 @@
+{
+  "name": "Laure Dinateur | Graphiste",
+  "short_name": "Laure Di",
+  "lang": "fr",
+  "start_url": "https://kode.ch/101/lauredi/index.html",
+  "display": "standalone",
+  "theme_color": "#1a535c",
+  "icons": [
+    {
+      "src": "https://kode.ch/101/lauredi/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -43,7 +43,7 @@ body {
     font-weight: 400;
     font-size: 100%;
     line-height: 1.4;
-    color: darkblue;
+    color: #000000;
     background-color: whitesmoke;
 }
 
@@ -110,7 +110,6 @@ header .metier {
 }
 header nav {
     text-align: center;
-
 }
 
 header nav ul {
@@ -121,9 +120,10 @@ header nav ul li {
     display: inline-block;
 }
 header nav ul li a {
+    display: inline-block;
     color: #fdfffc;
     font-weight: bold;
-    padding: 15px 10px;
+    padding: 10px 10px;
 }
 header nav ul li a:hover {
     color: #2ec4b6;
@@ -131,4 +131,74 @@ header nav ul li a:hover {
 
 header nav ul li a[href="index.html"] {
     display: none;
+}
+
+/* Contenu principal */
+main {
+    margin: 0 2.5%;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+footer nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+footer nav ul li img {
+    max-width: 50px;
+    margin: 0 15px;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+footer nav ul li img:hover {
+    filter: grayscale(0);
+}
+
+
+/* Page-infos */
+
+.page-infos img.laure {
+    border-radius: 50%;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.page-infos h1 {
+    text-align: center;
+}
+
+/* Page-contact */
+.contacts {
+    padding-left: 10px;
+}
+.contacts li {
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 6px;
+    padding-left: 20px;
+}
+.contacts li a {
+    padding-left: 10px;
+}
+.contacts li:first-child {
+    background-image: url(../img/phone.png);
+}
+.contacts li:nth-child(2) {
+    background-image: url(../img/mail.png);
+}
+.contacts li:nth-child(3) {
+    background-image: url(../img/twitter.png);
+}
+.contacts li:last-child {
+    background-image: url(../img/facebook.png);
 }

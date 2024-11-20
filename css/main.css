@@ -166,34 +166,43 @@ footer nav ul li img:hover {
 .page-accueil main {
     text-align: center;
 }
-.page-accueil main ul {
-    padding-left: 8%;
-    text-align: initial;
+.page-accueil ul.realisations {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
 }
 
-.page-accueil main li {
-    vertical-align: top;
-    display: inline-block;
-    width: 45%;
-    margin: 0;
+.page-accueil ul.realisations li {
+    background-color: #e7e9eb;
+    flex-basis: calc(50% - 20px);
+    flex-grow: 1;
+    transition: transform 0.5s;
+}
+
+.page-accueil ul.realisations li:hover {
+    transform: scale(1.1);
 }
 
 .page-accueil main li img {
     min-width: 140px;
     margin-bottom: -7px;
 }
-figure {
-    margin: 2.5%;
+.page-accueil ul.realisations figure {
+    margin: 0;
 }
 
-figcaption {
+.page-accueil ul.realisations figcaption {
     min-width: 140px;
     text-wrap: wrap;
     overflow: hidden;
-    background-color: lightgray;
     font-size: 1rem;
     padding: 10px;
-    color: black;
+}
+
+.page-accueil ul.realisations li a {
+    color: #011627;
 }
 
 /* Page-infos */

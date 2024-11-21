@@ -1,0 +1,36 @@
+@media screen and (min-width: 480px) {
+    .page-accueil main li {
+        vertical-align: top;
+        display: inline-block;
+        width: 30%;
+        margin: 0;
+    }
+    .page-accueil main ul {
+        padding-left: 10%;
+        text-align: initial;
+    }
+}
+@media screen and (min-width: 660px) {
+    .page-accueil main li {
+        vertical-align: top;
+        display: inline-block;
+        width: 25%;
+        margin: 0;
+    }
+    .page-accueil main ul {
+        padding-left: 17%;
+        text-align: initial;
+    }
+}
+@media screen and (min-width: 910px) {
+    .page-accueil main li {
+        vertical-align: top;
+        display: inline-block;
+        width: 25%;
+        margin: 0;
+    }
+    .page-accueil main ul {
+        padding-left: 17%;
+        text-align: initial;
+    }
+}

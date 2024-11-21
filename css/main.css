@@ -1,0 +1,247 @@
+/*# Importation des polices */
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+/* changa-one-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/changa-one-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 1.4;
+    color: #000000;
+    background-color: whitesmoke;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Changa One", cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+a {
+    color: #e71d36;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkmagenta;
+}
+
+/* Entete de page */
+header {
+    background-color: #011627;
+    padding-top: 5px;
+    margin-bottom: 30px;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .nom {
+    font-family: "Changa One", cursive;
+    font-weight: 400;
+    color: #2ec4b6;
+    font-size: 1.75rem;
+    margin: 15px 0;
+    line-height: 0.8;
+}
+
+header .metier {
+    color: #e71d36;
+    margin-top: -10px;
+    font-weight: bold;
+}
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    display: inline-block;
+    color: #fdfffc;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+header nav ul li a:hover {
+    color: #2ec4b6;
+}
+
+header nav ul li a[href="index.html"] {
+    display: none;
+}
+
+/* Contenu principal */
+main {
+    margin: 0 2.5%;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+footer nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+footer nav ul li img {
+    max-width: 50px;
+    margin: 0 15px;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+footer nav ul li img:hover {
+    filter: grayscale(0);
+}
+
+/* Page-accueil */
+.page-accueil main {
+    text-align: center;
+}
+
+.page-accueil ul.realisations {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.page-accueil ul.realisations li {
+    background-color: #e7e9eb;
+    flex-basis: calc(50% - 20px);
+    flex-grow: 1;
+    transition: transform 0.5s;
+}
+
+.page-accueil ul.realisations li:hover {
+    transform: scale(1.1);
+}
+
+.page-accueil main li img {
+    min-width: 140px;
+    margin-bottom: -7px;
+}
+.page-accueil ul.realisations figure {
+    margin: 0;
+}
+
+.page-accueil ul.realisations figcaption {
+    min-width: 140px;
+    text-wrap: wrap;
+    overflow: hidden;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.page-accueil ul.realisations li a {
+    color: #011627;
+}
+
+/* Page-infos */
+
+.page-infos img.laure {
+    border-radius: 50%;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.page-infos h1 {
+    text-align: center;
+}
+
+/* Page-contact */
+.contacts {
+    padding-left: 10px;
+}
+.contacts li {
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 6px;
+    padding-left: 20px;
+}
+.contacts li a {
+    padding-left: 10px;
+}
+.contacts li:first-child {
+    background-image: url(../img/phone.png);
+}
+.contacts li:nth-child(2) {
+    background-image: url(../img/mail.png);
+}
+.contacts li:nth-child(3) {
+    background-image: url(../img/twitter.png);
+}
+.contacts li:last-child {
+    background-image: url(../img/facebook.png);
+}

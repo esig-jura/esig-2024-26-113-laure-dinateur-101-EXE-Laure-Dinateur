@@ -1,36 +1,50 @@
 @media screen and (min-width: 480px) {
-    .page-accueil main li {
-        vertical-align: top;
-        display: inline-block;
-        width: 30%;
-        margin: 0;
+    .page-infos img.laure {
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 5%;
     }
-    .page-accueil main ul {
-        padding-left: 10%;
-        text-align: initial;
+    .page-accueil ul.realisations li {
+        flex-basis: calc(33% - 20px); /*pas oublier de soustraire les marges*/
     }
 }
 @media screen and (min-width: 660px) {
-    .page-accueil main li {
-        vertical-align: top;
+    .page-contact .col1,
+    .page-contact .col2 {
         display: inline-block;
-        width: 25%;
+        vertical-align: top;
+        width: 49%;
+        padding: 2.5%;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    header .logo {
+        text-align: left;
         margin: 0;
     }
-    .page-accueil main ul {
-        padding-left: 17%;
-        text-align: initial;
+    header .nom {
+        font-size: 2.25rem;
+    }
+    header .metier {
+        font-size: 1.5rem;
+    }
+    header .nav ul a[href="index.html"] {
+        display: inline-block;
     }
 }
 @media screen and (min-width: 910px) {
-    .page-accueil main li {
-        vertical-align: top;
-        display: inline-block;
-        width: 25%;
-        margin: 0;
+    main {
+        max-width: 910px;
+        margin-right: auto;
+        margin-left: auto;
     }
-    .page-accueil main ul {
-        padding-left: 17%;
-        text-align: initial;
+    .page-accueil ul.realisations li {
+        flex-basis: calc(25% - 20px); /*pas oublier de soustraire les marges*/
     }
 }
